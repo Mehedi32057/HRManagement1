@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #1f4037, #99b9b6); /* Smooth green gradient */
+      color: #000000; /* Black text */
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#p1 {
+  font-size: 3.1rem;
+}
+
+#p2 {
+  font-size: 2.5rem;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel-caption {
+  font-size: 2.9rem;
+  height: 29rem;
+}
+
+/* Section for Technology Stack */
+.divMain {
+  display: flex;
+  justify-content: space-between; /* Create space between text and image */
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.section-2 {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.section-2 .fit-image {
+  height: 40rem;
+  object-fit: cover; /* Ensure image fits well */
+  width: 100%;
+}
+
+.text {
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  flex: 1; /* Allow text section to take up available space */
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text #t1 {
+  margin-left: 7rem;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 1rem 3rem;
+  padding: 0;
+}
+
+li {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+ul.category {
+  margin-left: 0;
+}
+
+ul.category li {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+ul.subcategory {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+ul.subcategory li {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+/* Card Styling */
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 10px;
+}
+
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.container {
+  padding: 0 16px;
+  flex: 1;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Hover effect for the card */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .divMain {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    text-align: center; /* Center text */
+  }
+
+  .section-2 .fit-image {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .card {
+    width: 100%; /* Ensure cards take full width on smaller screens */
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
